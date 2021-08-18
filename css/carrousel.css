@@ -185,13 +185,6 @@
   .carrousel-pagination {
     margin-top: 70px;
   }
-
-  /* price tag */
-
-  .pricing-tag-container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
 }
 
 @media screen and (max-width: 709px) {
@@ -227,17 +220,6 @@
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.23;
-  }
-
-  .pricing-tag-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 824px) {
-  .pricing-tag-wrapper.highlight {
-    margin-top: 70px;
   }
 }
 

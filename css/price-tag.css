@@ -194,3 +194,17 @@ button.order-btn:hover {
 .pricing-footer.highlight {
   padding-bottom: 50px;
 }
+
+@media screen and (min-width: 710px) and (max-width: 1023px) {
+  .pricing-tag-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 709px) {
+  .pricing-tag-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
