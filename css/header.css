@@ -1,0 +1,67 @@
+/* header-navigation */
+.header-navigation {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  background: #2c2e3d;
+  color: #b6bec4;
+  font-family: "Montserrat", sans-serif;
+
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+.navigation,
+.option {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header img {
+  max-width: 10rem;
+  max-height: 3.5rem;
+}
+
+header > .navigation span {
+  padding: 0px 15px;
+  border: solid 2px #2c2e3d;
+  font-weight: 700;
+}
+
+header > .option span {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+header span:hover {
+  cursor: pointer;
+  color: #00bcd4;
+}
+
+header span.active {
+  border-color: white;
+  color: white;
+}
+
+header span.active:hover {
+  border-color: #00bcd4;
+  color: #00bcd4;
+}
+
+.option > .language,
+.bx.bx-shopping-bag.bx-sm,
+.bx.bx-search.bx-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0px;
+}
+
+header span > p {
+  color: white;
+  background: #00bcd4;
+  padding: 5px;
+}
