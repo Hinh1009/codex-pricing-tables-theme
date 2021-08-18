@@ -8,6 +8,10 @@
   flex-wrap: wrap;
 }
 
+.pricing-tag-wrapper {
+  padding: 10px;
+}
+
 .pricing-tag-column {
   position: static;
 
@@ -200,11 +204,19 @@ button.order-btn:hover {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+
+  .pricing-tag-wrapper {
+    padding: 70px;
+  }
 }
 
 @media screen and (max-width: 709px) {
   .pricing-tag-container {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .pricing-tag-wrapper {
+    padding: 70px;
   }
 }
