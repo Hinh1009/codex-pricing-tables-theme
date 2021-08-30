@@ -1,222 +1,147 @@
-.pricing-tag-container {
-  padding-top: 10rem;
-  background-color: #3d3a43;
-  padding-bottom: 10rem;
+.price-tag-wrapper {
+  padding: 192px 0 160px 0;
+  background-color: #3c3a43;
+}
 
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.pricing-tag-wrapper {
-  padding: 10px;
+.pricetable-col {
+  width: 261px;
+  max-height: 780px;
 }
 
-.pricing-tag-column {
-  position: static;
-
-  margin-top: 70px;
-  margin-left: 15px;
-  margin-right: 15px;
-
-  border-radius: 12px;
-  overflow: hidden;
-
-  line-height: 25px;
-  font-size: 1rem;
+.pricetable-col-header {
+  background-color: #5f727f;
+  width: 100%;
+  padding: 30px 0 25px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.pricing-price-row {
-  background-color: #5e727f;
-  padding: 3rem 3rem 1.5rem 3rem;
+.pricetable-col-header .block-hover {
+  display: none;
 }
 
-.pricing-price-wrapper {
-  height: 12rem;
-  width: 12rem;
+.pricetable-col-header .block-hover-subtitle1 {
+  font-size: 24px;
+  color: white;
+  padding-bottom: 12px;
+  font-weight: normal;
+}
+
+.pricetable-col-header .block-hover-subtitle2 {
+  font-size: 14px;
+  color: #5f727f;
+}
+
+.pricetable-col-header .circle-price-content {
+  border: 5px solid #00bcd4;
+  padding: 39px 0;
+  margin: 0 50.5px;
   border-radius: 50%;
-  background-color: transparent;
-
-  border: solid 2px #00bcd4;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pricing-price {
-  line-height: 25px;
-}
-
-.pricing-cost {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-
-  line-height: 25px;
-
-  color: white;
-  letter-spacing: 1px;
-}
-
-.time {
-  display: inline-block;
-  font-weight: 300;
+  margin-bottom: 20px;
   color: #b6c6c9;
-
-  margin-top: 10px;
 }
 
-.pricing-row-title {
-  background-color: #5e727f;
-  color: white;
-  padding-bottom: 1.5rem;
-
-  font-size: 1.5rem;
+.pricetable-col-header .circle-price-content p:first-child {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-}
-
-.pricing-row {
-  padding: 10px 10px;
-  border-bottom: 2px solid #dfe5e8;
-  background-color: white;
-}
-
-figure:nth-child(8n) {
-  border-bottom: none;
-}
-
-.pricing-footer {
-  padding-top: 10px;
-  padding-bottom: 30px;
-  background-color: white;
-
-  text-align: center;
-}
-
-button.order-btn {
-  display: inline-flex;
-  justify-content: center;
-  width: 7rem;
-
-  background-color: #3a3d50;
-  border: solid 2px #3a3d50;
-}
-
-.order-btn > span {
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
   font-weight: 700;
-  line-height: 30px;
-  text-transform: uppercase;
   color: white;
 }
 
-span.bx.bxs-right-arrow {
-  font-size: 0.5rem;
+.pricetable-col-header .circle-price-month {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
 }
 
-button.order-btn:hover {
-  transition: 0.3s ease-in-out;
-  background-color: #00bcd4;
-  border-color: #00bcd4;
+.pricetable-col-rowsubtile {
+  background-color: #fff;
 }
 
-/* top choice column 2 */
-
-.pricing-top-choice {
-  position: absolute;
-  margin: 70px 0 20px 30px;
+.pricetable-col-rowsubtile .content-table li {
+  list-style: none;
+  line-height: 50px;
+  color: #5f727f;
 }
 
-.pricing-svg {
-  height: 50px;
+.pricetable-col-rowsubtile .content-table li:not(li:last-child) {
+  border-bottom: 1px solid #f0f3f2;
 }
 
-/* highlight column 3 */
-
-.pricing-tag-column.highlight {
-  margin: 0px;
+.pricetable-col-btnorder {
+  background-color: #fff;
+  padding: 25px 0 50px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.pricing-price-row.highlight {
+.pricetable-col-btnorder button {
+  padding: 14.5px 14px;
   background-color: #393d50;
-  padding-top: 0;
+  color: white;
+  border: 1px solid #393d50;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 4px;
 }
 
-.pricing-row-title.highlight {
-  background-color: #393d50;
+.pricetable-col:hover {
+  margin-top: -110px;
+  cursor: pointer;
+  -webkit-transition: width 2s;
+  transition: width 2s;
 }
 
-.pricing-subtitle {
-  padding-top: 30px;
+.pricetable-col:hover .block-hover {
+  display: block;
   padding-bottom: 20px;
 }
 
-.pricing-subtitle-header {
-  color: white;
-  font-size: 1.75rem;
+.pricetable-col .circle-price-message {
+  display: block;
 }
 
-.pricing-subtitle-content {
-  color: #b6c6c9;
+.pricetable-col:hover .pricetable-col-header {
+  background-color: #393d50;
 }
 
-.pricing-price-wrapper.highlight {
-  border-color: white;
-}
-
-.pricing-cost.highlight {
-  color: #00bcd4;
-}
-
-.pricing-row-title.highlight > .pricing-number {
-  font-size: 1.5rem;
-}
-
-.pricing-row-title.highlight > .pricing-best-choice-cmt {
-  color: #b6c6c9;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 1;
-}
-
-.order-btn.highlight {
+.pricetable-col:hover .pricetable-col-btnorder > button {
   background-color: white;
-  border: solid 2px #00bcd4;
-}
-
-.order-btn.highlight > span {
   color: #00bcd4;
+  border: 4px solid #00bcd4;
 }
 
-.order-btn.highlight > span:hover {
-  color: white;
-}
-
-.pricing-footer.highlight {
-  padding-bottom: 50px;
-}
-
-@media screen and (min-width: 710px) and (max-width: 1023px) {
-  .pricing-tag-container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .pricing-tag-wrapper {
-    padding: 70px;
+@media screen and (max-width: 1073px) {
+  .pricetable-col:nth-child(4) {
+    margin-top: 50px !important;
   }
 }
 
-@media screen and (max-width: 709px) {
-  .pricing-tag-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+@media screen and (max-width: 1023px) {
+  .pricetable-col:nth-child(3) {
+    margin-top: 50px !important;
   }
+}
 
-  .pricing-tag-wrapper {
-    padding: 70px;
+@media screen and (max-width: 767px) {
+  .pricetable-col:nth-child(2) {
+    margin-top: 50px !important;
   }
 }

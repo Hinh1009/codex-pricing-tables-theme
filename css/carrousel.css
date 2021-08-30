@@ -1,7 +1,7 @@
 .carrousels-container {
   background: #2c2e3d;
   color: white;
-  padding-top: 160px;
+  padding-top: 15rem;
   position: relative;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .logo-title {
-  margin-top: 80px;
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
 }
@@ -53,7 +53,7 @@
 .logo-content > p {
   font-weight: 300;
   font-size: 1.5rem;
-  line-height: 37px;
+  line-height: 2.5rem;
 }
 
 /* prev next */
@@ -97,20 +97,17 @@
 
 .processing-btn > button {
   margin: 0 0.5rem 0 0.5rem;
-
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1rem;
   color: white;
   background: transparent;
-
   padding: 0.5rem;
   border-radius: 40px;
   border: solid 2px white;
-
-  width: 200px;
-  height: 50px;
+  width: 14rem;
+  height: 3.5rem;
 }
 
 .processing-btn > button:hover {
@@ -122,7 +119,7 @@
 /* carrousel pagination */
 
 .carrousel-pagination {
-  margin-top: 140px;
+  margin-top: 10rem;
 }
 
 .dot-border {

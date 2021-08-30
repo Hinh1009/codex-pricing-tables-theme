@@ -1,0 +1,119 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  background-color: black;
+}
+
+.information,
+.contact,
+.footer-post,
+.footer-link,
+.footer-email,
+.projects,
+.flick-feed,
+.newsletter {
+  text-align: center;
+  margin-bottom: 5rem;
+  max-width: 300px;
+}
+
+.contact-title,
+.footer-post-title,
+.footer-link-title,
+.footer-email-title,
+.projects-title,
+.flick-feed-title,
+.newsletter-title {
+  display: inline-flex;
+  justify-content: center;
+
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.contact-title > p,
+.footer-post-title > p,
+.footer-link-title > p,
+.footer-email-title > p,
+.projects-title > p,
+.flick-feed-title > p,
+.newsletter-title > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: white;
+}
+
+.contact-title > img,
+.footer-post-title > img,
+.footer-link-title > img,
+.footer-email-title > img,
+.projects-title > img,
+.flick-feed-title > img,
+.newsletter-title > img {
+  height: 7px;
+  margin-top: 13px;
+}
+
+.projects-wrapper {
+  max-width: 100%;
+  display: inline-grid;
+  grid-template-columns: 5.5rem 5.5rem 5.5rem;
+  grid-template-rows: 5.5rem 5.5rem;
+}
+
+.projects-wrapper > .project {
+  width: calc(100% - 0.5rem);
+  height: calc(100% - 0.5rem);
+}
+
+.project1 {
+  background-color: #99a9b5;
+}
+
+.project2 {
+  background-color: #5f727f;
+}
+
+.project3 {
+  background-color: #394054;
+}
+
+.project4 {
+  background-color: #394054;
+}
+
+.project5 {
+  background-color: #181828;
+}
+
+.project6 {
+  background-color: #00bcd4;
+}
+
+.project-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  max-width: 1rem;
+  max-height: 1rem;
+
+  width: 1rem;
+  height: 1rem;
+  background: #394050;
+
+  border-radius: 50%;
+
+  margin: 0.5rem;
+}
+
+.dot.active {
+  background: white;
+}
