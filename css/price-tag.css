@@ -1,5 +1,5 @@
 .price-tag-wrapper {
-  padding: 200px 0 120px 0;
+  padding: 160px 0 120px 0;
   background-color: #3c3a43;
 }
 
@@ -19,6 +19,7 @@
 .pricetable-col {
   width: 260px;
   height: 780px;
+  margin-top: 40px;
   margin-bottom: 40px;
   transition: all 0.5s ease-in-out;
 }
@@ -107,7 +108,7 @@
 .pricetable-col:hover {
   margin-top: -110px;
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.05, 1.05);
   /* transition: margin-top 1s; */
 }
 
