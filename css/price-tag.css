@@ -20,6 +20,7 @@
   width: 260px;
   height: 780px;
   margin-bottom: 40px;
+  transition: all 0.5s ease-in-out;
 }
 
 .pricetable-col-header {
@@ -49,7 +50,7 @@
 .pricetable-col-header .circle-price-content {
   border: 4px solid #00bcd4;
   padding: 39px 0;
-  margin: 0 50.5px;
+  margin: 0 50px;
   border-radius: 50%;
   margin-bottom: 20px;
   color: #b6c6c9;
@@ -94,7 +95,7 @@
 }
 
 .pricetable-col-btnorder button {
-  padding: 14.5px 14px;
+  padding: 14px 14px;
   background-color: #393d50;
   color: white;
   border: 1px solid #393d50;
@@ -105,9 +106,9 @@
 
 .pricetable-col:hover {
   margin-top: -110px;
-  transform: translateY(-10px);
   cursor: pointer;
-  transition: margin-top 1s;
+  transform: scale(1.05);
+  /* transition: margin-top 1s; */
 }
 
 .pricetable-col:hover .block-hover {
