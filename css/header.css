@@ -3,11 +3,9 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-
   background: #2c2e3d;
   color: #b6bec4;
   font-family: "Montserrat", sans-serif;
-
   padding-top: 2rem;
 }
 
