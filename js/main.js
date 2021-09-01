@@ -6,17 +6,9 @@ const carrouselContainer = document.querySelector(".carrousels-container");
 
 const carrousels = document.querySelector(".carrousels").children;
 
-// const dotBtn = document.querySelectorAll(".dot-icon");
-
 const dotBtn = document.getElementsByClassName("dot-icon");
 
 const dotBtnActive = document.querySelector(".dot-icon.active");
-
-// const dot1 = document.querySelector("#dot-1");
-
-// const dot2 = document.querySelector("#dot-2");
-
-// const dot3 = document.querySelector("#dot-3");
 
 const totalCarrousels = carrousels.length;
 
@@ -35,14 +27,12 @@ let changeCarrousel = (direction) => {
     } else {
       index += 1;
     }
-  } else if (direction == "prev") {
+  } else {
     if (index == 0) {
       index = totalCarrousels - 1;
     } else {
       index--;
     }
-  } else {
-    console.log("button", index);
   }
 
   for (i = 0; i < totalCarrousels; i++) {
@@ -75,8 +65,15 @@ rightArrow.addEventListener("click", () => {
 });
 
 for (i = 0; i < dotBtn.length; i++) {
-  dotBtn[i].addEventListener("click", () => {
-    console.log("Hello world");
+  dotBtn[i].addEventListener("click", (e) => {
+    index = parseInt(e.target.getAttribute("value")) - 1;
+    for (i = 0; i < totalCarrousels; i++) {
+      carrousels[i].classList.add("hidden");
+      dotBtn[i].classList.remove("active");
+    }
+
+    carrousels[index].classList.remove("hidden");
+    dotBtn[index].classList.add("active");
   });
 }
 
