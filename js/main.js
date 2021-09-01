@@ -8,8 +8,6 @@ const carrousels = document.querySelector(".carrousels").children;
 
 const dotBtn = document.getElementsByClassName("dot-icon");
 
-const dotBtnActive = document.querySelector(".dot-icon.active");
-
 const totalCarrousels = carrousels.length;
 
 const dotNumber = dotBtn.length;
@@ -67,6 +65,7 @@ rightArrow.addEventListener("click", () => {
 for (i = 0; i < dotBtn.length; i++) {
   dotBtn[i].addEventListener("click", (e) => {
     index = parseInt(e.target.getAttribute("value")) - 1;
+
     for (i = 0; i < totalCarrousels; i++) {
       carrousels[i].classList.add("hidden");
       dotBtn[i].classList.remove("active");
