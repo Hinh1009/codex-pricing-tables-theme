@@ -306,6 +306,10 @@ textarea {
   margin: 0.5rem;
 }
 
+.dot:hover {
+  cursor: pointer;
+}
+
 .dot.active {
   background: white;
 }
