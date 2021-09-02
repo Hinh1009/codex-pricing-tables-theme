@@ -1,0 +1,186 @@
+/* text wrapper */
+.text-wrapper {
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+
+.text-title {
+  display: flex;
+  justify-content: center;
+}
+
+.text-title > span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+}
+
+.text-content {
+  margin-top: 70px;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  text-align: left;
+}
+
+.text-content > span {
+  color: #2c2e3d;
+  font-weight: 500;
+}
+
+/* text wrapper 2 */
+.text-wrapper-2 {
+  background-color: #494b58;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.text-wrapper-2-logo {
+  height: 5rem;
+  margin-bottom: 5rem;
+}
+
+.text-wrapper-2-logo > img {
+  height: 100%;
+}
+
+.text-title.text-title-2 {
+  margin-bottom: 100px;
+}
+
+.text-title-span {
+  font-size: 6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: white;
+}
+
+.text-content.text-content-2 {
+  margin-left: 17rem;
+  margin-right: 17rem;
+  text-align: justify;
+  margin-bottom: 100px;
+}
+
+.text-content > p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.processing-btn.text-wrapper-2-btn {
+  margin-bottom: 200px;
+}
+
+.processing-btn.text-wrapper-2-btn > button {
+  border-color: #00bcd4;
+  color: #00bcd4;
+  width: 15rem;
+  height: 2.5rem;
+}
+
+.processing-btn.text-wrapper-2-btn > button:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+
+/* responsive */
+@media screen and (min-width: 710px) and (max-width: 1023px) {
+  /* text wrapper 1 */
+  .text-wrapper {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  .text-title > span {
+    font-size: 2rem;
+  }
+
+  .text-content {
+    margin-top: 3rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .text-content > span {
+    text-align: center;
+  }
+
+  /* text wrapper 2 */
+  .text-wrapper-2 {
+    padding-top: 7.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .text-wrapper-2-logo {
+    margin-bottom: 2.5rem;
+  }
+
+  .text-title.text-title-2 {
+    margin-bottom: 4rem;
+  }
+
+  .text-content.text-content-2 {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 50px;
+  }
+
+  .text-content.text-content-2 > p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .processing-btn.text-wrapper-2-btn {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 709px) {
+  /* text wrapper 1 */
+  .text-wrapper {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .text-title > span {
+    font-size: 1.5rem;
+  }
+
+  .text-content {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .text-content > span {
+    text-align: center;
+  }
+
+  /* text wrapper 2 */
+  .text-wrapper-2 {
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .text-wrapper-2-logo {
+    margin-bottom: 1.5rem;
+  }
+
+  .text-title.text-title-2 {
+    margin-bottom: 2rem;
+  }
+
+  .text-content.text-content-2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .text-content.text-content-2 > p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .processing-btn.text-wrapper-2-btn {
+    margin-bottom: 4rem;
+  }
+}

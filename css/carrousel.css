@@ -1,0 +1,223 @@
+.carrousels-container {
+  background: #2c2e3d;
+  color: white;
+  padding-top: 15rem;
+  position: relative;
+}
+
+.icon {
+  display: inline-block;
+  width: 6rem;
+  height: 5rem;
+}
+
+.icon > img {
+  height: 100%;
+  width: 100%;
+}
+
+.logo-title {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-title > span {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.light {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.bold {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.logo-content {
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.logo-content,
+.processing-btn {
+  margin-top: 4rem;
+}
+
+.logo-content > p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+/* prev next */
+.bx.bx-left-arrow-alt,
+.bx.bx-right-arrow-alt {
+  background: #212331;
+  cursor: pointer;
+  position: absolute;
+  color: white;
+
+  font-size: 2rem;
+  top: 50%;
+  margin-top: -1rem;
+  width: auto;
+  padding: 1rem;
+  border-radius: 0 3px 3px 0;
+}
+
+.bx.bx-left-arrow-alt {
+  left: 0px;
+}
+
+.bx.bx-right-arrow-alt {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.bx.bx-left-arrow-alt:hover,
+.bx.bx-right-arrow-alt:hover {
+  background: #00bcd4;
+}
+
+/* processing btn */
+.processing-btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.processing-btn > button {
+  margin: 0 0.5rem 0 0.5rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  background: transparent;
+  padding: 0.5rem;
+  border-radius: 40px;
+  border: solid 2px white;
+  width: 14rem;
+  height: 3.5rem;
+}
+
+.processing-btn > button:hover {
+  cursor: pointer;
+  border-color: #00bcd4;
+  color: #00bcd4;
+}
+
+/* carrousel pagination */
+.carrousel-pagination {
+  margin-top: 10rem;
+}
+
+.dot-border {
+  margin: 0 1rem 2rem 0;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 1.5px;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border: solid 2px white;
+}
+
+.dot-icon {
+  display: inline-block;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  margin: 1.5px;
+}
+
+.dot-icon.active {
+  background-color: #00bcd4;
+}
+
+/* responsive */
+@media screen and (min-width: 710px) and (max-width: 1023px) {
+  .carrousels-container {
+    padding-top: 80px;
+    position: relative;
+  }
+
+  .bx.bx-left-arrow-alt,
+  .bx.bx-right-arrow-alt {
+    display: none;
+  }
+
+  .logo-title {
+    margin-top: 40px;
+  }
+
+  .logo-title > span {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .logo-content,
+  .processing-btn {
+    margin: 2rem;
+  }
+
+  .logo-content > p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  .carrousel-pagination {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 709px) {
+  .carrousels-container {
+    padding-top: 40px;
+    position: relative;
+  }
+
+  .bx.bx-left-arrow-alt,
+  .bx.bx-right-arrow-alt {
+    display: none;
+  }
+
+  .logo-title {
+    margin-top: 20px;
+  }
+
+  .logo-title > span {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .logo-content,
+  .processing-btn {
+    margin: 1rem;
+  }
+
+  .carrousel-pagination {
+    margin-top: 3rem;
+  }
+
+  .logo-content > p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.23;
+  }
+}
+
+@media screen and (max-width: 452px) {
+  .processing-btn > button:last-child {
+    margin-top: 1rem;
+  }
+}
